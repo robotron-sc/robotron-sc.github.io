@@ -1,13 +1,3 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background: #F9F9F9;
-}
-
-img {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 .tab-list {
     overflow: hidden;
     background: inherit;
@@ -22,7 +12,7 @@ img {
     outline: none;
     cursor: pointer;
     padding: 8px 55px;
-    /* min-width: 175px; */
+    transition: padding .2s;
 }
 
 .tab-list button:hover {
@@ -57,9 +47,10 @@ img {
 }
 
 /* mobile support */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 520px) {
     #mobile { display: none; }
     .tab-list button {
-        padding: 8px 14px;
+        transition: padding .5s ease-out;
+        padding: 8px 20px;
     }
 }

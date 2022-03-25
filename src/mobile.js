@@ -5,7 +5,7 @@ window.onload = () => {
     if (!isMobile) {
         elmnt = document.createElement('iframe')
         elmnt.setAttribute('style', 'width: 100%; height: 700px;')
-        elmnt.setAttribute('src', './docs/latest')
+        elmnt.setAttribute('src', './src/docs/latest')
         document.getElementById('docs').appendChild(elmnt)
     }
 }
